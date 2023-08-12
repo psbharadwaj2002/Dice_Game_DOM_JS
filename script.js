@@ -33,6 +33,8 @@ document.querySelector("#dice-image").src = numbers[randomIndex]
 const reset = ()=>{
 
     // SHOULD MAKE THEIR SCORE 0
+    player1score = 0
+    player2score = 0
     document.querySelector(".score1").innerText = 0
     document.querySelector(".score2").innerText = 0
     
@@ -44,8 +46,7 @@ const reset = ()=>{
         window.location.reload();
     }
     
-    player1score = 0
-    player2score = 0
+    
 
     // if winner is 1 then 2 should start the game else 1 will start the game
     if(winner === 1){
