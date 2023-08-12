@@ -1,0 +1,73 @@
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+#title>p{
+    color: green;
+}
+
+
+h1 {
+    font-size: 2rem;
+}
+  
+@media screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+}
+  
+
+@media screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.2rem;
+    }
+}
+  
+
+#play-area{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#dice>img{
+    width: 10vw;
+    height: 10vw;
+    margin: 5vw 10vw;
+}
+
+.button1, .button2{
+    border: none;
+    padding: 8px 20px;
+    font-size: 9px;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#reset>button{
+    font-size: 9px;
+    background-color: rgb(241, 119, 139);
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#player-area>p{
+    font-size: 1rem;
+}
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&family=Oswald:wght@200&display=swap" rel="stylesheet">
+      
+    <title>Dice Game</title>
+</head>
+<body>
+    <div id = "container">
+        
+        <div id = "title">
+            <p>Let's Play Dice</p>
+        </div>
+
+        <!-- Div where all the updates are shown ==> who has the dice, who is the winner, who will start-->
+        <div id="player">
+            <h1>Player-<span id = "player-id">1</span><span id = "result"> To Play</span></h1>
+        </div>
+
+        <!-- DIV#PLAY-AREA => This area contains players scores and game will be played in this area -->
+        <div id = "play-area">
+            <!-- DIV for Player-1, his/her score -->
+            <div id = "player">
+                <p>Player-1</p>
+                <h2 class = "score1">0</h2>
+                <!-- Once Player-1 clicks the botthe then dice should roll, access should go to player 2, should update player-1 score and check is game is over or not -->
+                <button class = "button1" onclick="roll(); player2(); update1score(); anyWinner()"> Roll Now</button>
+            </div>
+
+            <!-- Div for image -->
+            <div id = "dice">
+                <img src="./images/1.png" alt="" id = "dice-image">
+            </div>
+
+            <!-- DIV for Player-2 and his/her Score-->
+            <div class = "player">
+                <p>Player-2</p>
+                <h2 class = "score2">0</h2>
+                <!-- Once Player-2 clicks the botthe then dice should roll, access should go to player 1, should update player-2 score and check is game is over or not -->
+                <button class = "button2" onclick="roll(); player1(); update2score(); anyWinner()" > Roll Now</button>
+            </div>
+        
+        </div>
+        
+
+        <!-- RESET button ==> on click players score will become zero, starts new game -->
+        <div id = "reset" onclick="reset()">
+            <button>RESET</button>
+        </div>
+
+    </div>
+    
+
+    <script src = "script.js"></script>
+</body>
+</html>
