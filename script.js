@@ -39,10 +39,7 @@ const reset = ()=>{
     // SHOULD ENABLE THEIR BUTTONS TO PLAY
     button1.removeAttribute('disabled');
     button2.removeAttribute('disabled');
-
-    if(!anyWinner()){
-        window.location.reload();
-    }
+    window.location.reload()
     
     player1score = 0
     player2score = 0
