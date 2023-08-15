@@ -57,7 +57,7 @@ h1 {
     border-radius: 10px;
 }
 
-#reset{
+#reset>button{
     font-size: 9px;
     background-color: rgb(241, 119, 139);
     border: none;
