@@ -1,7 +1,7 @@
 // USING THESE BUTTONS TO GET INPUT PLAYERS
 var button1 = document.querySelector('.button1');
 var button2 = document.querySelector('.button2');
-
+var resetButton = document.querySelector("#reset");
 
 // FOR SCORES
 var player1score = 0
@@ -146,4 +146,21 @@ const update2score = () =>{
     document.querySelector(".score2").innerHTML = player2score;
 }
 
+
+// Button1 on click
+button1.addEventListener("click", roll)
+button1.addEventListener("click", player2)
+button1.addEventListener("click", update1score)
+button1.addEventListener("click", anyWinner)
+
+
+// Button2 on click
+button2.addEventListener("click", roll)
+button2.addEventListener("click", player1)
+button2.addEventListener("click", update2score)
+button2.addEventListener("click", anyWinner)
+
+
+// RESET BUTTON
+resetButton.addEventListener("click", resetPage)
 
