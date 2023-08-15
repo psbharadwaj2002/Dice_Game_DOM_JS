@@ -30,7 +30,7 @@
                 <p>Player-1</p>
                 <h2 class = "score1">0</h2>
                 <!-- Once Player-1 clicks the botthe then dice should roll, access should go to player 2, should update player-1 score and check is game is over or not -->
-                <button class = "button1" onclick="roll(); player2(); update1score(); anyWinner()"> Roll Now</button>
+                <button class = "button1"> Roll Now</button>
             </div>
 
             <!-- Div for image -->
@@ -43,15 +43,15 @@
                 <p>Player-2</p>
                 <h2 class = "score2">0</h2>
                 <!-- Once Player-2 clicks the botthe then dice should roll, access should go to player 1, should update player-2 score and check is game is over or not -->
-                <button class = "button2" onclick="roll(); player1(); update2score(); anyWinner()" > Roll Now</button>
+                <button class = "button2"> Roll Now</button>
             </div>
         
         </div>
         
 
         <!-- RESET button ==> on click players score will become zero, starts new game -->
-        <div id = "reset" onclick="reset()">
-            <button>RESET</button>
+        <div>
+            <button id = "reset">RESET</button>
         </div>
 
     </div>
